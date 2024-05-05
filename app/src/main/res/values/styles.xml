@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+        <!-- menu hamburger icon -->
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+    </style>
+
+    <!-- Estilos para el boton 3 puntos (overFlow) del menu del toolbar-->
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">#FFF</item>
+        <item name="android:src">@drawable/ic_graphics</item>
+    </style>
+
+    <!-- Estilos para el menu hamburger del menu del toolbar-->
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">#fff</item>
+    </style>
+
+    <style name="ImageViewButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_image_button</item>
+        <item name="android:layout_margin">@dimen/imageView_margin</item>
+    </style>
+
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Shadow">
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowRadius">6</item>
+        <item name="android:shadowColor">@android:color/black</item>
+    </style>
+
+    <!-- Text Fields -->
+    <style name="MyTheme.DayNight.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_marginStart">@dimen/item_padding_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/item_padding_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/item_padding_vertical</item>
+    </style>
+
+</resources>
